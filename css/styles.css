@@ -234,10 +234,11 @@ header > .btn-header-wrapper >.btn-play{
         height: 100px;
         margin-right: 10px;
     }
-    .class-items-qty{
+    .cart-items-qty{
         width: 100px;
         padding: 5px 10px;
         margin-right: 10px;
+        background: #ccc;
     }
 
     .cart-items-remove{
