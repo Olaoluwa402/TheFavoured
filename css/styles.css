@@ -394,4 +394,17 @@ footer > ul > li > a >.fa-brands:hover{
         padding: 0 10px;
     }
 
+    /* about */
+    .about{
+        padding: 10px;
+        width: 100%;
+     }
+     .about img{
+         margin: 15px;
+      }
+ 
+      .about p{
+         text-align: justify;
+      }
+
 }
