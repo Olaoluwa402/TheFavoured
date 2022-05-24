@@ -134,13 +134,19 @@ header > .btn-header-wrapper >.btn-play{
         margin-top: 0;
     }
 
-    .events > table{
+    .tableWrapper{
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    .events table{
+        width: 100%;
         min-width: 600px;
-        max-width: 100%;
         margin: 0 auto;
         padding: 0 10px;
         border-collapse: collapse;
     }
+
     .events table td{
         border-bottom: 1px solid rgba(0, 0, 0, .5);
         margin-right: 10px 20px;
@@ -215,10 +221,16 @@ header > .btn-header-wrapper >.btn-play{
         /* background-color: blue; */
     }
 
+    .cart .tableWrapper{
+        padding: 10px;
+        overflow-x: auto;
+    }
+
     .cart > table{
-        min-width: 600px;
-        max-width: 75%;
+        width: 100%;
+        min-width: 650px;
         margin: 0 auto;
+        font-size: .6rem;
     }
 
     .cart-items-title{
@@ -230,14 +242,15 @@ header > .btn-header-wrapper >.btn-play{
     }
 
     .cart-items-title img{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         margin-right: 10px;
     }
     .cart-items-qty{
-        width: 100px;
+        width: 70px;
         padding: 5px 10px;
         margin-right: 10px;
+        margin-bottom: 5px;
         background: #ccc;
     }
 
@@ -351,3 +364,34 @@ footer > ul > li > a >.fa-brands:hover{
 /* footer styling */
 
 
+@media (max-width:520px){
+    header > nav > ul > li{
+        margin-right: 1rem;
+    }
+ 
+    header > nav > ul > li > a{
+        font-size: 14px;
+    }
+
+    header > h1{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    footer > h2{
+        font-size: 2rem;
+    }
+    footer > ul > li{
+        margin-right: 7px;
+    }
+    
+    footer > ul > li > a >.fa-brands{
+        font-size: 1.2rem;
+    }
+
+    /* collection */
+    .collection{
+        width: 100%;
+        padding: 0 10px;
+    }
+
+}
