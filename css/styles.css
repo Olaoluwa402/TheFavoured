@@ -140,8 +140,8 @@ header > .btn-header-wrapper >.btn-play{
     }
 
     .events table{
-        width: 100%;
-        min-width: 600px;
+        min-width: 650px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 0 10px;
         border-collapse: collapse;
@@ -226,9 +226,9 @@ header > .btn-header-wrapper >.btn-play{
         overflow-x: auto;
     }
 
-    .cart > table{
-        width: 100%;
+    .cart .tableWrapper table{
         min-width: 650px;
+        max-width: 100%;
         margin: 0 auto;
         font-size: .6rem;
     }
@@ -236,7 +236,7 @@ header > .btn-header-wrapper >.btn-play{
     .cart-items-title{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         padding: 15px;
 
     }
