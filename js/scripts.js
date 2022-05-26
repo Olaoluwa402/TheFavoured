@@ -28,6 +28,19 @@ function ready(){
             const button = addToCartButtons[i]
                   button.addEventListener('click', addToCartClicked)
     }
+
+    document.getElementsByClassName('cart-item-purshase')[0].addEventListener('click', purchaseClicked)
+}
+
+function purchaseClicked(e){
+    let cartRow = document.getElementsByTagName('tbody')[0]
+    if(!cartRow.hasChildNodes()){
+        alert('Cart is empty')
+    }else{
+        alert('Cart items purchased')
+        cartRow.innerHTML = ''
+        updateCartTotal()
+    }
 }
 
 
@@ -40,6 +53,7 @@ function addToCartClicked(e){
           const imgSrc = collectionItems.getElementsByClassName('collection-img')[0].src
         
           addItemToCart(title, price, imgSrc)
+          updateCartTotal()
 }
 
 const addItemToCart = (title, price, imgSrc)=>{
@@ -69,6 +83,8 @@ const addItemToCart = (title, price, imgSrc)=>{
         `
         tr.innerHTML = cartContent
         tbody.appendChild(tr)
+        tr.getElementsByClassName('cart-items-remove')[0].addEventListener('click', removeCartItem)
+        tr.getElementsByClassName('cart-items-qty')[0].addEventListener('change', inputChanged)
 }
 
 // input changed handler
